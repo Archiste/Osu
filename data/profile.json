@@ -1,16 +1,78 @@
 {
   "id": 16021128,
-"username": "My Angel Arc",
-  "country_code": null,
-  "avatar_url": "https://a.ppy.sh/16021128",
-  "global_rank": 451089,
-  "country_rank": 16300,
-  "pp": null,
-  "accuracy": null,
-  "play_count": null,
-  "play_time_hours": null,
-  "level": null,
-  "grades": null,
-  "top_plays": [],
-  "updated_at": "2026-10-08T00:00:00Z"
+  "username": "My Angel Arc",
+  "country_code": "FR",
+  "avatar_url": "https://a.ppy.sh/16021128?1791732825.jpeg",
+  "global_rank": 385471,
+  "country_rank": 13745,
+  "pp": 2532.53,
+  "accuracy": 93.4386,
+  "play_count": 9479,
+  "play_time_hours": 156,
+  "level": 79,
+  "grades": {
+    "ss": 0,
+    "ssh": 0,
+    "s": 16,
+    "sh": 0,
+    "a": 182
+  },
+  "top_plays": [
+    {
+      "title": "Mizuoto to Curtain",
+      "artist": "MIMI feat. Hatsune Miku",
+      "version": "Lucid",
+      "stars": 5.49463,
+      "rank": "A",
+      "accuracy": 92.36111111111111,
+      "pp": 157.9,
+      "mods": [],
+      "url": "https://osu.ppy.sh/beatmaps/2025942"
+    },
+    {
+      "title": "Ai no Sukima",
+      "artist": "MIMI feat. Hatsune Miku",
+      "version": "Radiance",
+      "stars": 5.30513,
+      "rank": "A",
+      "accuracy": 95.94017094017094,
+      "pp": 143.946,
+      "mods": [],
+      "url": "https://osu.ppy.sh/beatmaps/1988753"
+    },
+    {
+      "title": "hate the way you love me (nightcore & cut ver.)",
+      "artist": "renforshort",
+      "version": "kumocha's extra",
+      "stars": 5.14131,
+      "rank": "A",
+      "accuracy": 97.12121212121212,
+      "pp": 137.988,
+      "mods": [],
+      "url": "https://osu.ppy.sh/beatmaps/5395689"
+    },
+    {
+      "title": "Marshmary",
+      "artist": "MIMI feat. Hatsune Miku",
+      "version": "Horizon",
+      "stars": 5.11155,
+      "rank": "A",
+      "accuracy": 96.55555555555554,
+      "pp": 136.001,
+      "mods": [],
+      "url": "https://osu.ppy.sh/beatmaps/2014469"
+    },
+    {
+      "title": "One by One",
+      "artist": "ONE OK ROCK",
+      "version": "Extra",
+      "stars": 5.64556,
+      "rank": "A",
+      "accuracy": 93.24786324786325,
+      "pp": 127.487,
+      "mods": [],
+      "url": "https://osu.ppy.sh/beatmaps/2397136"
+    }
+  ],
+  "updated_at": "2026-10-19T13:20:56.742Z"
 }
