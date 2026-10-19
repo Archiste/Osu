@@ -1,4 +1,4 @@
-import { writeFile, mkdir } from 'node:fs/promises';
+import { writeFile, mkdir } from 'node:fs/promises'; 
 
 const ID = process.env.OSU_USER_ID || '16021128';
 const { OSU_CLIENT_ID, OSU_CLIENT_SECRET } = process.env;
