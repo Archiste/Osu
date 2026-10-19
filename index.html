@@ -12,14 +12,14 @@
 </head>
 <body>
 <div class="wrap">
-<header class="card head">
-  <div class="avatar" id="avatar"><span id="initial"></span></div>
-  <div>
-    <h1 id="name">Archiste Alias My Angel Arc</h1>
-    <span class="mode">osu!standard</span>
-    <span class="country" id="country" title="Country" hidden></span>
-  </div>
-</header>
+  <header class="card head">
+    <div class="av" id="avatar"><span id="initial"></span></div>
+    <div>
+      <h1 id="name">Archiste Alias My Angel Arc</h1>
+      <span class="mode">osu!standard</span>
+      <span class="country" id="country" title="Country">France</span>
+    </div>
+  </header>
 
   <div class="card tabs" role="tablist" aria-label="Sections">
     <button role="tab" id="t-profile" aria-selected="true" aria-controls="p-profile">Profile</button>
@@ -39,24 +39,24 @@
     </section>
 
     <section class="panel" id="p-plays" role="tabpanel" aria-labelledby="t-plays" hidden>
-      <div class="card plays" id="plays"><p class="empty">Merde j'ai casser le link a mon osu mb je fix au plus vite</p></div>
+      <div class="card plays" id="plays"><p class="empty">Aucun top play pour le moment.</p></div>
     </section>
 
     <section class="panel" id="p-play" role="tabpanel" aria-labelledby="t-play" hidden>
       <div class="card bar">
-  <div class="seg" id="diff" role="group" aria-label="Difficulty">
-    <button type="button" data-beats="2" aria-pressed="false">Easy</button>
-    <button type="button" data-beats="1" aria-pressed="true">Normal</button>
-    <button type="button" data-beats="0.5" aria-pressed="false">Hard</button>
-  </div>
-  <button type="button" id="music" class="btn ghost" aria-pressed="true">Music: On</button>
-  <label>Vol <input type="range" id="volume" min="0" max="1" step="0.05" value="0.5">
-    <span id="volume-value">50%</span></label>
-  <span>Best: <b id="best">--</b></span>
-</div>
-<audio id="track" src="Shiawase.vip.mp3" preload="auto"></audio>
+        <div class="seg" id="diff" role="group" aria-label="Difficulty">
+          <button type="button" data-beats="2" aria-pressed="false">Easy</button>
+          <button type="button" data-beats="1" aria-pressed="true">Normal</button>
+          <button type="button" data-beats="0.5" aria-pressed="false">Hard</button>
+        </div>
+        <button type="button" id="music" class="btn ghost" aria-pressed="true">Music: On</button>
+        <label class="volume">Vol
+          <input type="range" id="volume" min="0" max="1" step="0.05" value="0.5">
+          <span id="volume-value">50%</span>
+        </label>
         <span>Best: <b id="best">--</b></span>
       </div>
+
       <div class="card field" id="field" aria-label="osu! mais nul">
         <div class="hud"><span class="cm" id="combo">0x</span><span id="acc">100.00%</span></div>
         <div class="start" id="start">
@@ -64,6 +64,8 @@
           <button class="btn" id="play" type="button">Start</button>
         </div>
       </div>
+
+      <audio id="track" src="Shiawase.vip.mp3" preload="auto"></audio>
     </section>
 
     <section class="panel" id="p-links" role="tabpanel" aria-labelledby="t-links" hidden>
@@ -74,4 +76,5 @@
 </div>
 <script src="script.js"></script>
 </body>
+</html>
 </html>
