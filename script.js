@@ -29,6 +29,16 @@
       img.onload = function () { $('avatar').textContent = ''; $('avatar').appendChild(img); };
       img.src = p.avatar_url;
     }
+    var cover = $('cover');
+    cover.hidden = !p.cover_url;
+    if (p.cover_url) {
+      cover.onload = function () { cover.classList.add('cover--loaded'); };
+      cover.onerror = function () { cover.hidden = true; };
+      cover.src = p.cover_url;
+    } else {
+      cover.removeAttribute('src');
+      cover.classList.remove('cover--loaded');
+    }
     if (p.country_code) {
       $('country').hidden = false;
       $('country').textContent = flag(p.country_code) + ' ' + p.country_code.toUpperCase();
@@ -48,6 +58,7 @@
     rows.forEach(function (r) {
       if (r[1] === null) return;
       var card = el('div', 'card stat ' + r[2]);
+      card.style.setProperty('--card-index', stats.children.length);
       card.appendChild(el('span', '', r[0]));
       var s = el('strong', '', r[1]);
       card.appendChild(s); stats.appendChild(card);
@@ -128,7 +139,7 @@
 
   var f = $('field'), st = $('start'), cb = $('combo'), ac = $('acc'), bestEl = $('best');
   var track = $('track'), musicButton = $('music'), volumeControl = $('volume'), volumeValue = $('volume-value');
-  var BEAT_SECONDS = 0.4, BEAT_OFFSET = 0.05, APPROACH_SECONDS = 0.35;
+  var BEAT_SECONDS = 0.4, BEAT_OFFSET = 0.05, APPROACH_SECONDS = 0.65;
   var beatStep = 1, hitWindow = 0.14, combo = 0, pts = 0, done = 0, best = null;
   var beatTimes = [], activeCircles = [], nextBeat = 0, isPlaying = false, frame = null;
   var musicEnabled = true;
@@ -176,20 +187,43 @@
   }
   function spawn(index, targetTime, now) {
     var w = f.clientWidth, h = f.clientHeight;
-    var x = 60 + Math.random() * (w - 120), y = 70 + Math.random() * (h - 130);
-    var c = el('div', 'hit' + (index % 2 ? ' hit--alt' : ''));
+    var margin = 54, minY = 76;
+    var minX = Math.min(margin, w / 2), maxX = Math.max(minX, w - margin);
+    var maxY = Math.max(minY, h - margin);
+    var x = minX, y = minY, attempts = 0;
+    do {
+      x = minX + Math.random() * (maxX - minX);
+      y = minY + Math.random() * (maxY - minY);
+      attempts++;
+    } while (attempts < 18 && activeCircles.some(function (circle) {
+      var dx = circle.x - x, dy = circle.y - y;
+      return dx * dx + dy * dy < 112 * 112;
+    }));
+    var number = (index % 4) + 1;
+    var c = el('button', 'hit' + (index % 2 ? ' hit--alt' : ''), String(number));
+    c.type = 'button';
+    c.setAttribute('aria-label', 'Cercle ' + number + ', appuyer sur ' + number);
     c.style.left = x + 'px'; c.style.top = y + 'px';
     var ring = el('i', 'ring');
     ring.style.animationDuration = (APPROACH_SECONDS * 1000) + 'ms';
     ring.style.animationDelay = -Math.max(0, (now - (targetTime - APPROACH_SECONDS)) * 1000) + 'ms';
-    c.appendChild(ring); c.appendChild(document.createTextNode((index % 4) + 1));
+    c.appendChild(ring);
     c.addEventListener('pointerdown', function (e) {
       e.preventDefault();
       judge(c, x, y, true, targetTime, track.currentTime);
     });
     f.appendChild(c);
-    activeCircles.push({ element: c, x: x, y: y, targetTime: targetTime });
+    activeCircles.push({ element: c, x: x, y: y, targetTime: targetTime, number: number });
   }
+  document.addEventListener('keydown', function (e) {
+    if (!isPlaying || !/^[1-4]$/.test(e.key)) return;
+    if (/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) return;
+    var number = Number(e.key);
+    var circle = activeCircles.find(function (item) { return item.number === number; });
+    if (!circle) return;
+    e.preventDefault();
+    judge(circle.element, circle.x, circle.y, true, circle.targetTime, track.currentTime);
+  });
   function tick() {
     if (!isPlaying) return;
     var now = track.currentTime;
@@ -247,7 +281,7 @@
     track.play().then(function () {
       beatTimes = [];
       var beatInterval = BEAT_SECONDS * beatStep;
-      hitWindow = Math.min(0.2, beatInterval * 0.35);
+      hitWindow = Math.min(0.2, beatInterval * 0.45);
       var firstBeat = BEAT_OFFSET;
       while (firstBeat < APPROACH_SECONDS + 0.05) firstBeat += beatInterval;
       for (var beat = firstBeat; beat < track.duration - hitWindow; beat += beatInterval) {
@@ -272,3 +306,4 @@
     });
   });
 })();
+;
