@@ -27,6 +27,7 @@ const out = {
   username: user.username,
   country_code: user.country_code ?? null,
   avatar_url: user.avatar_url ?? `https://a.ppy.sh/${ID}`,
+  cover_url: user.cover?.url ?? null,
   global_rank: s.global_rank ?? null,
   country_rank: s.country_rank ?? null,
   pp: s.pp ?? null,
@@ -50,5 +51,7 @@ const out = {
 };
 
 await mkdir('data', { recursive: true });
+await writeFile('data/profile.json', JSON.stringify(out, null, 2) + '\n');
+console.log('Synced', out.username, 'rank', out.global_rank);
 await writeFile('data/profile.json', JSON.stringify(out, null, 2) + '\n');
 console.log('Synced', out.username, 'rank', out.global_rank);
