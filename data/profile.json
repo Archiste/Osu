@@ -4,19 +4,19 @@
   "country_code": "FR",
   "avatar_url": "https://a.ppy.sh/16021128?1791732825.jpeg",
   "cover_url": "https://assets.ppy.sh/user-profile-covers/16021128/82b6488f2c5f1f7a219db982ffcbbb19222add1820bb4750089c90a582b5f889.png",
-  "global_rank": 381044,
-  "country_rank": 13560,
-  "pp": 2560.12,
-  "accuracy": 93.3162,
-  "play_count": 9716,
-  "play_time_hours": 161,
-  "level": 82,
+  "global_rank": 379474,
+  "country_rank": 13511,
+  "pp": 2568.26,
+  "accuracy": 93.3406,
+  "play_count": 9797,
+  "play_time_hours": 162,
+  "level": 83,
   "grades": {
     "ss": 0,
     "ssh": 0,
     "s": 16,
     "sh": 0,
-    "a": 187
+    "a": 191
   },
   "top_plays": [
     {
@@ -75,5 +75,5 @@
       "url": "https://osu.ppy.sh/beatmaps/2397136"
     }
   ],
-  "updated_at": "2026-10-23T11:19:56.591Z"
+  "updated_at": "2026-10-23T16:48:37.392Z"
 }
