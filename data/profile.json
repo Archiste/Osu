@@ -4,11 +4,11 @@
   "country_code": "FR",
   "avatar_url": "https://a.ppy.sh/16021128?1794401146.jpeg",
   "cover_url": "https://assets.ppy.sh/user-profile-covers/16021128/5c635bc828edc5a0359cc63da6063339a7e532bf88f65d38cb84f04f22adae70.png",
-  "global_rank": 362353,
+  "global_rank": 362522,
   "country_rank": 12857,
   "pp": 2680.38,
   "accuracy": 93.9301,
-  "play_count": 10518,
+  "play_count": 10568,
   "play_time_hours": 173,
   "level": 87,
   "grades": {
@@ -75,5 +75,5 @@
       "url": "https://osu.ppy.sh/beatmaps/5438072"
     }
   ],
-  "updated_at": "2026-11-12T00:20:07.636Z"
+  "updated_at": "2026-11-12T14:55:43.588Z"
 }
