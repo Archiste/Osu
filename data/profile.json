@@ -4,21 +4,32 @@
   "country_code": "FR",
   "avatar_url": "https://a.ppy.sh/16021128?1794401146.jpeg",
   "cover_url": "https://assets.ppy.sh/user-profile-covers/16021128/5c635bc828edc5a0359cc63da6063339a7e532bf88f65d38cb84f04f22adae70.png",
-  "global_rank": 356612,
-  "country_rank": 12631,
-  "pp": 2713.42,
-  "accuracy": 94.1933,
-  "play_count": 10611,
-  "play_time_hours": 174,
+  "global_rank": 347836,
+  "country_rank": 12287,
+  "pp": 2761.59,
+  "accuracy": 94.5894,
+  "play_count": 10653,
+  "play_time_hours": 175,
   "level": 88,
   "grades": {
     "ss": 0,
     "ssh": 0,
     "s": 16,
     "sh": 0,
-    "a": 218
+    "a": 221
   },
   "top_plays": [
+    {
+      "title": "I Don't Know (Nightcore & Cut Ver.)",
+      "artist": "Erika",
+      "version": "Kumocha's Extra",
+      "stars": 5.04531,
+      "rank": "A",
+      "accuracy": 99.24242424242425,
+      "pp": 161.716,
+      "mods": [],
+      "url": "https://osu.ppy.sh/beatmaps/5463158"
+    },
     {
       "title": "Mizuoto to Curtain",
       "artist": "MIMI feat. Hatsune Miku",
@@ -62,18 +73,7 @@
       "pp": 136.001,
       "mods": [],
       "url": "https://osu.ppy.sh/beatmaps/2014469"
-    },
-    {
-      "title": "I Don't Know (Nightcore & Cut Ver.)",
-      "artist": "Erika",
-      "version": "Do You Know?",
-      "stars": 5.28803,
-      "rank": "A",
-      "accuracy": 95.71428571428572,
-      "pp": 135.54,
-      "mods": [],
-      "url": "https://osu.ppy.sh/beatmaps/5438072"
     }
   ],
-  "updated_at": "2026-11-13T14:27:26.474Z"
+  "updated_at": "2026-11-13T23:25:37.229Z"
 }
