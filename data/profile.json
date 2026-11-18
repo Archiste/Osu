@@ -4,19 +4,19 @@
   "country_code": "FR",
   "avatar_url": "https://a.ppy.sh/16021128?1794401146.jpeg",
   "cover_url": "https://assets.ppy.sh/user-profile-covers/16021128/5c635bc828edc5a0359cc63da6063339a7e532bf88f65d38cb84f04f22adae70.png",
-  "global_rank": 342093,
-  "country_rank": 12047,
-  "pp": 2797.18,
-  "accuracy": 94.7496,
-  "play_count": 10769,
-  "play_time_hours": 177,
-  "level": 89,
+  "global_rank": 335854,
+  "country_rank": 11820,
+  "pp": 2834.07,
+  "accuracy": 94.8902,
+  "play_count": 10915,
+  "play_time_hours": 180,
+  "level": 90,
   "grades": {
     "ss": 0,
     "ssh": 0,
     "s": 16,
     "sh": 0,
-    "a": 227
+    "a": 230
   },
   "top_plays": [
     {
@@ -42,6 +42,17 @@
       "url": "https://osu.ppy.sh/beatmaps/2025942"
     },
     {
+      "title": "I Don't Know (Nightcore & Cut Ver.)",
+      "artist": "Erika",
+      "version": "Do You Know?",
+      "stars": 5.28803,
+      "rank": "A",
+      "accuracy": 97.38095238095238,
+      "pp": 155.984,
+      "mods": [],
+      "url": "https://osu.ppy.sh/beatmaps/5438072"
+    },
+    {
       "title": "Ai no Sukima",
       "artist": "MIMI feat. Hatsune Miku",
       "version": "Radiance",
@@ -53,27 +64,16 @@
       "url": "https://osu.ppy.sh/beatmaps/1988753"
     },
     {
-      "title": "hate the way you love me (nightcore & cut ver.)",
-      "artist": "renforshort",
-      "version": "kumocha's extra",
-      "stars": 5.14131,
+      "title": "The Best of Both Worlds (Nightcore & Cut Ver.)",
+      "artist": "Miley Cyrus",
+      "version": "Kumocha's Extra",
+      "stars": 5.29291,
       "rank": "A",
-      "accuracy": 97.12121212121212,
-      "pp": 137.988,
+      "accuracy": 96.1352657004831,
+      "pp": 138.781,
       "mods": [],
-      "url": "https://osu.ppy.sh/beatmaps/5395689"
-    },
-    {
-      "title": "Marshmary",
-      "artist": "MIMI feat. Hatsune Miku",
-      "version": "Horizon",
-      "stars": 5.11155,
-      "rank": "A",
-      "accuracy": 96.55555555555554,
-      "pp": 136.001,
-      "mods": [],
-      "url": "https://osu.ppy.sh/beatmaps/2014469"
+      "url": "https://osu.ppy.sh/beatmaps/5486311"
     }
   ],
-  "updated_at": "2026-11-17T15:45:05.594Z"
+  "updated_at": "2026-11-18T00:48:34.070Z"
 }
