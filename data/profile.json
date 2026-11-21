@@ -2,14 +2,14 @@
   "id": 16021128,
   "username": "My Angel Arc",
   "country_code": "FR",
-  "avatar_url": "https://a.ppy.sh/16021128?1794401146.jpeg",
+  "avatar_url": "https://a.ppy.sh/16021128?1795275915.jpeg",
   "cover_url": "https://assets.ppy.sh/user-profile-covers/16021128/5c635bc828edc5a0359cc63da6063339a7e532bf88f65d38cb84f04f22adae70.png",
   "global_rank": 330789,
-  "country_rank": 11640,
+  "country_rank": 11642,
   "pp": 2867.4,
   "accuracy": 94.9294,
-  "play_count": 11001,
-  "play_time_hours": 181,
+  "play_count": 11004,
+  "play_time_hours": 182,
   "level": 91,
   "grades": {
     "ss": 0,
@@ -75,5 +75,5 @@
       "url": "https://osu.ppy.sh/beatmaps/5486311"
     }
   ],
-  "updated_at": "2026-11-21T06:31:57.751Z"
+  "updated_at": "2026-11-21T18:56:23.241Z"
 }
